@@ -11,7 +11,7 @@
 
     <h1 class="text-center">Negociações</h1>
 
-    <form class="form">
+    <form class="form" onsubmit="negociacaoController.adicionar(event)">
 
         <div class="form-group">
             <label for="data">Data</label>
@@ -41,35 +41,20 @@
     </div>
     <br>
     <br>
-
-    <table class="table table-hover table-bordered">
-        <thead>
-            <tr>
-                <th>DATA</th>
-                <th>QUANTIDADE</th>
-                <th>VALOR</th>
-                <th>VOLUME</th>
-            </tr>
-        </thead>
-
-        <tbody>
-        </tbody>
-
-        <tfoot>
-        </tfoot>
-    </table>
+    
 
     <!-- por convenção será usado esse padrão Camel Case -->
     <!-- e a arquitetura de pasta será nesse modelo -->
-    <script src="js/index.js"></script>
-    <!--<script src="js/app/models/Negociacao.js"></script>-->
-    <!--<script src="js/app/controller/NegociacaoController.js"></script>-->
-    <!--<script src="js/app/helpers/DateHelper.js"></script>-->
-    <!--<script src="js/app/models/ListaNegociacoes.js"></script>-->
+    <!--<script src="js/index.js"></script>-->
+    <script src="js/app/models/Negociacao.js"></script>
+    <script src="js/app/controller/NegociacaoController.js"></script>
+    <script src="js/app/helpers/DateHelper.js"></script>
+    <script src="js/app/models/ListaNegociacoes.js"></script>
+    <script src="js/app/views/NegociacaoView.js"></script>
 
     <script>
 
-        // let negociacaoController = new NegociacaoController()
+        let negociacaoController = new NegociacaoController()
 
     </script>
 

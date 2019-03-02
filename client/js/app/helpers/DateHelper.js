@@ -13,22 +13,6 @@ class DateHelper {
 
     return new Date(texto.replace(/-/g, ','))
 
-    // console.log(data)
-
-    /*
-    // usando o spret operator
-    let data2 = new Date(
-      ...this._inputData.value
-        .split('-')
-        .map((item, index) => {
-          if (index == 1)
-            return item - 1
-          return item
-        })
-    )
-    console.log(data2)
-    */
-
   }
 
   static dataParaTexto(data) {
