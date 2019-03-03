@@ -11,6 +11,8 @@
 
     <h1 class="text-center">Negociações</h1>
 
+    <div id="mensagemView"></div>
+
     <form class="form" onsubmit="negociacaoController.adicionar(event)">
 
         <div class="form-group">
@@ -41,7 +43,7 @@
     </div>
     <br>
     <br>
-    
+    <div id="negociacoesView"></div>
 
     <!-- por convenção será usado esse padrão Camel Case -->
     <!-- e a arquitetura de pasta será nesse modelo -->
@@ -50,7 +52,10 @@
     <script src="js/app/controller/NegociacaoController.js"></script>
     <script src="js/app/helpers/DateHelper.js"></script>
     <script src="js/app/models/ListaNegociacoes.js"></script>
+    <script src="js/app/views/View.js"></script>
     <script src="js/app/views/NegociacaoView.js"></script>
+    <script src="js/app/models/Mensagem.js"></script>
+    <script src="js/app/views/MensagemView.js"></script>
 
     <script>
 
